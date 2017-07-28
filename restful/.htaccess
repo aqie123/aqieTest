@@ -1,0 +1,10 @@
+# 开启 rewrite 功能
+Options +FollowSymlinks
+RewriteEngine on
+
+
+#http://restful.com/site/list/    获取所有站点列表
+#http://restful.com/site/list/3/  使用 id 获取指定的站点，以下 URI 为获取 id 为 3 的站点：
+# 重写规则
+RewriteRule ^site/list/$   RestController.php?view=all [nc,qsa]
+RewriteRule ^site/list/([0-9]+)/$   RestController.php?view=single&id=$1 [nc,qsa]
