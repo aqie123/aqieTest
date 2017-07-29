@@ -3,33 +3,43 @@ namespace app\index\controller;
 class MobileQuery{
     const PHONE_API = 'https://tcc.taobao.com/cc/json/mobile_tel_segment.htm';
 
-    const QUERY_PHONE = 'PHONE:INFO:';
+    const QUERY_PHONE = 'PHONE:INFO';
 
     /**
-     * 显示归属地查询后数据
+     *
      * @param $phone
+     * @return mixed 反归属地查询后数据
      */
     public static function query($phone){
+        $ret = [];
         if(self::verifyPhone($phone)){
             $httRequest = new \libs\HttpRequest();
             $redis = new \libs\ImRedis();
-            echo $name = $redis::getRedis()->get('name');
+            // 测试redis是否可用
+            // echo $name = $redis::getRedis()->get('name');
             $redis::getRedis()->set('name','aqie123');
 
-            // $redisKey = sprintf(self::QUERY_PHONE . '%s', substr($phone, 0, 7));
+             // $redisKey = sprintf(self::QUERY_PHONE . '%s', substr($phone, 0, 7));
              $redisKey = substr($phone, 0, 7);
-            var_dump($redisKey);
+            $phoneInfo = $redis::getRedis()->hGet(self::QUERY_PHONE,$redisKey);
+            if($phoneInfo){             // redis数据库存在数据
+                $ret = json_decode($phoneInfo,true);
+                $ret['msg'] = "啊切提供数据";
+            }else{
+                $response = $httRequest::request(self::PHONE_API , ['tel' => $phone]); // 请求数据
+                $data = self::formatData($response);
 
-            $response = $httRequest::request(self::PHONE_API , ['tel' => $phone]); // 请求数据
-            $data = self::formatData($response);
-            if($data){
-                //var_dump($data);
-                $json = json_encode($data);
-                echo $json;
-
-                $redis::getRedis()->hSet(self::QUERY_PHONE,$redisKey,$json);
+                if($data){
+                    $json = json_encode($data);
+                    $redis::getRedis()->hSet(self::QUERY_PHONE,$redisKey,$json);
+                    $data['msg'] = '阿里巴巴提供数据';
+                    $ret = $data;
+                }
             }
+
         }
+        // var_dump($ret);die;
+        return $ret;       // return json($ret);   tp5框架
     }
 
     /**
