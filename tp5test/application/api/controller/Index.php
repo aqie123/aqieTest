@@ -86,6 +86,7 @@ class Index extends Controller
 
         $response = new \libs\Response();
         $file = new \libs\FileCache();
+        $file->cacheData('test','啊切aqie',180);
 
         $page = isset($_GET['page']) ? $_GET['page'] : 1;
         $pageSize = isset($_GET['pagesize']) ? $_GET['pagesize'] : 6;
@@ -100,7 +101,7 @@ class Index extends Controller
             return $response::dataEncode(400,'failed',$admins,"json");
         }
 
-        $file->cacheData('test','啊切aqie');
+
 
 
     }

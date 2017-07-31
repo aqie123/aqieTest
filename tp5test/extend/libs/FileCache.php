@@ -39,7 +39,7 @@ class FileCache
 
             // 11位，不满11位用0补
             $cacheTime = sprintf('%011d', $cacheTime);
-            return file_put_contents($filename,json_encode($value));  // json或者序列化
+            return file_put_contents($filename,$cacheTime .json_encode($value));  // json或者序列化
         }
         if(!is_file($filename)) {           // 判断文件是否存在
             return FALSE;

@@ -15,14 +15,23 @@
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+            <state relative-caret-position="248">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#37#58#0#PHP" expanded="true" />
-                <element signature="e#1289#1766#0#PHP" expanded="false" />
                 <element signature="e#1796#2239#0#PHP" expanded="false" />
-                <marker date="1501408817961" expanded="true" signature="2100:2119" ph="select * fro... admin" />
+                <marker date="1501409418198" expanded="true" signature="2100:2119" ph="select * fro... admin" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend/libs/files/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/extend/libs/FileCache.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -89,8 +98,9 @@
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/common/model/Admin.php" />
         <option value="$PROJECT_DIR$/note.php" />
-        <option value="$PROJECT_DIR$/extend/libs/FileCache.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/extend/libs/files/test.php" />
+        <option value="$PROJECT_DIR$/extend/libs/FileCache.php" />
       </list>
     </option>
   </component>
@@ -115,8 +125,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="514" />
-    <option name="y" value="9" />
+    <option name="x" value="69" />
+    <option name="y" value="22" />
     <option name="width" value="1386" />
     <option name="height" value="891" />
   </component>
@@ -171,6 +181,13 @@
               <item name="tp5test" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="extend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="tp5test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp5test" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="files" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="tp5test" type="b2602c69:ProjectViewProjectNode" />
@@ -231,15 +248,15 @@
       <workItem from="1501312514006" duration="694000" />
       <workItem from="1501376281365" duration="10974000" />
       <workItem from="1501394570352" duration="9903000" />
-      <workItem from="1501406340541" duration="2812000" />
+      <workItem from="1501406340541" duration="3138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48434000" />
+    <option name="totallyTimeSpent" value="48760000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="514" y="9" width="1386" height="891" extended-state="0" />
+    <frame x="69" y="22" width="1386" height="891" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20510949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -275,13 +292,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/controller/MobileQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/note.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -504,6 +514,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -605,19 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
-          <folding>
-            <element signature="e#37#58#0#PHP" expanded="true" />
-            <element signature="e#1289#1766#0#PHP" expanded="false" />
-            <element signature="e#1796#2239#0#PHP" expanded="false" />
-            <marker date="1501408817961" expanded="true" signature="2100:2119" ph="select * fro... admin" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/App.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
@@ -642,10 +640,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/extend/libs/files/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#58#0#PHP" expanded="true" />
+            <element signature="e#1796#2239#0#PHP" expanded="false" />
+            <marker date="1501409418198" expanded="true" signature="2100:2119" ph="select * fro... admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/extend/libs/FileCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="41" column="59" lean-forward="false" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
           <folding />
         </state>
       </provider>
